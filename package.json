@@ -1,0 +1,19 @@
+{
+  "name": "csportfolio",
+  "version": "1.0.0",
+  "description": "Computer Science portfolio website showcasing my projects and skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^11.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "react-typical": "^0.1.3"
+  }
+}
