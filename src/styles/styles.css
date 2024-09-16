@@ -2,25 +2,21 @@ body {
   font-family: 'Montserrat', 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f8ff; /* Adjust color as needed */
+  background-color: #f0f8ff;
 }
 
 .home-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background-image: url('../assets/darkbg.png'); /* Add your background image here */
-  background-size: cover;
-  background-position: center;
   position: relative;
 }
 
 .header {
-  z-index: 1;
   color: #333;
+  z-index: 1;
 }
 
 .header-title {
@@ -34,7 +30,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   margin-top: 0;
-  color: #536DFE; /* Use a blue that matches your design */
+  color: #536DFE;
 }
 
 .header-description {
@@ -50,36 +46,14 @@ body {
 
 .social-icon {
   margin: 0 10px;
-  font-size: 1.5rem;
+  font-size: 2.5rem; /* Slightly increased from 1.5rem to 1.7rem */
   color: #536DFE;
   text-decoration: none;
+  transition: outline 0.3s ease, color 0.3s ease; /* Add transition for smooth outline effect */
 }
 
-.resume-button {
-  background-color: #536DFE;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-top: 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-  background-color: #3A4EB9;
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
-  opacity: 0.2; /* Adjust opacity as needed */
+.social-icon:hover {
+  outline: 2px solid black; /* Adds a small black outline around the icon */
+  outline-offset: 2px; /* Creates a small space between the icon and the outline */
+  color: #333; /* Optional: Change color on hover for better contrast */
 }
