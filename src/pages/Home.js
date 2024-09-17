@@ -26,7 +26,11 @@ const Home = () => {
             <TypingAnimation />
           </h2>
           <p className="header-description">
-          2nd year Computer Science major @ UC Riverside - blending technology with business insights to create innovative solutions.
+            Undergraduate Computer Science w/Business Applications @ 
+            <span className="glowing-text"> UC Riverside </span>
+          </p>
+          <p className="header-description-sub">
+            Blending technology with business insights to create innovative solutions.
           </p>
           <div className="social-icons">
             <a href="#" className="social-icon"><FaInstagram /></a>

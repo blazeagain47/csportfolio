@@ -57,3 +57,42 @@ body {
   outline-offset: 2px; /* Creates a small space between the icon and the outline */
   color: #333; /* Optional: Change color on hover for better contrast */
 }
+
+/* Glowing Rainbow Text Styles */
+.glowing-text {
+  font-size: 2rem; /* Adjust to match your design */
+  font-weight: 700; /* Bold text */
+  background: linear-gradient(90deg, #ff0000, #ff7700, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00f3, #ff0000);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowing 3s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Other styling */
+.header-description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #555;
+}
+
+.header-description-sub {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #777;
+  margin-top: 5px;
+}
+

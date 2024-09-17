@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const TypingAnimation = () => {
   return (
-    <h2>
+    <h2 style={{ color: '#7df9ff' }}>
       <Typewriter
         words={['Data Engineer', 'Frontend Developer', 'UI/UX Designer']}
         loop={Infinity}
