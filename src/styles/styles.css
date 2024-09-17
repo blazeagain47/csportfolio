@@ -5,6 +5,37 @@ body {
   background-color: #f0f8ff;
 }
 
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  padding: 10px 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+/* Home Container and Header Styling */
 .home-container {
   display: flex;
   align-items: center;
@@ -12,6 +43,7 @@ body {
   height: 100vh;
   text-align: center;
   position: relative;
+  padding-top: 60px; /* Ensures space for the navbar */
 }
 
 .header {
@@ -40,31 +72,39 @@ body {
   color: #555;
 }
 
+/* Social Icons */
 .social-icons {
   margin-top: 20px;
 }
 
 .social-icon {
   margin: 0 10px;
-  font-size: 2.5rem; /* Slightly increased from 1.5rem to 1.7rem */
+  font-size: 2.5rem;
   color: #536DFE;
   text-decoration: none;
-  transition: outline 0.3s ease, color 0.3s ease; /* Add transition for smooth outline effect */
+  transition: outline 0.3s ease, color 0.3s ease;
 }
 
 .social-icon:hover {
-  outline: 2px solid black; /* Adds a small black outline around the icon */
-  outline-offset: 2px; /* Creates a small space between the icon and the outline */
-  color: #333; /* Optional: Change color on hover for better contrast */
+  outline: 2px solid black;
+  outline-offset: 2px;
+  color: #333;
 }
 
 /* Glowing Rainbow Text Styles */
+.glowing-text-container {
+  position: relative; /* Establishes a positioning context for the UFO */
+  display: inline-block;
+  text-align: center;
+}
+
 .glowing-text {
-  font-size: 2rem; /* Adjust to match your design */
-  font-weight: 700; /* Bold text */
+  font-size: 1.9rem;
+  font-weight: 700;
   background: linear-gradient(90deg, #ff0000, #ff7700, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00f3, #ff0000);
   background-size: 400%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glowing 3s ease-in-out infinite;
 }
@@ -81,7 +121,7 @@ body {
   }
 }
 
-/* Other styling */
+/* Styling for additional descriptions */
 .header-description {
   font-size: 1.5rem;
   font-weight: 500;
@@ -96,3 +136,13 @@ body {
   margin-top: 5px;
 }
 
+/* Style for the animated UFO image */
+.ufo-icon {
+  position: absolute;
+  top: -100px; /* Adjust this value to control the height above the "UC Riverside" text */
+  left: 50%; /* Centers the UFO above "UC Riverside" */
+  transform: translateX(-50%); /* Ensures the UFO is centered */
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  z-index: 1;
+}

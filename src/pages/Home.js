@@ -14,6 +14,15 @@ const Home = () => {
         backgroundPosition: 'center',
       }}
     >
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <ul className="nav-links">
+          <li><a href="#home" className="nav-link">Home</a></li>
+          <li><a href="#projects" className="nav-link">Projects</a></li>
+          <li><a href="#about" className="nav-link">About</a></li>
+        </ul>
+      </nav>
+
       <header className="header">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -27,7 +36,10 @@ const Home = () => {
           </h2>
           <p className="header-description">
             Undergraduate Computer Science w/Business Applications @ 
-            <span className="glowing-text"> UC Riverside </span>
+            <span className="glowing-text-container">
+              <span className="glowing-text"> UC Riverside</span>
+              <img src={require('../assets/animatedUFO.gif')} className="ufo-icon" alt="Animated UFO" />
+            </span>
           </p>
           <p className="header-description-sub">
             Blending technology with business insights to create innovative solutions.
