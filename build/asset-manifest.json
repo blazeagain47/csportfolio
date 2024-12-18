@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.078929af.css",
+    "main.js": "/static/js/main.d6d745fe.js",
+    "static/media/gradient.png": "/static/media/gradient.95e69808fa315a4bddd4.png",
+    "static/media/animatedUFO.gif": "/static/media/animatedUFO.f7278e754af7e6126ef3.gif",
+    "index.html": "/index.html",
+    "main.078929af.css.map": "/static/css/main.078929af.css.map",
+    "main.d6d745fe.js.map": "/static/js/main.d6d745fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.078929af.css",
+    "static/js/main.d6d745fe.js"
+  ]
+}
